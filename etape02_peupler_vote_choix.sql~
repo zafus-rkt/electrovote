@@ -1,0 +1,12 @@
+begin transaction;
+
+insert into vote (id_vote, titre, description, date_creation, date_debut, date_fin) values
+	(1, 'Choix document linkedin', 'Choisir le document sur le numérique responsable qui sera partagé sur Linkedin.');
+	
+insert into choix (id_choix, libelle, id_vote) values
+	(10, 'document 1', 1),
+	(12, 'document 2', 1),
+	(11, 'document 3', 1),
+	(13, 'document 4', 1);
+		
+commit;

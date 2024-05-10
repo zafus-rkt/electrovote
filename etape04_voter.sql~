@@ -1,0 +1,7 @@
+begin transaction;
+
+	-- vote d'un utilisateur (antoine choisit le document 2)
+	
+
+		
+commit;

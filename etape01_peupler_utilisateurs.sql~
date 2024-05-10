@@ -1,0 +1,13 @@
+begin transaction;
+
+insert into utilisateur (id_user, login, mdp) values
+	(0, 'admin', 'admin'),
+	(1, 'florent', 'toto'),
+	(2, 'charles', 'tutu'),
+	(3, 'antoine', 'toto'),
+	(4, 'tristan', 'titi'),
+	(5, 'bryan', 'toto');
+	
+update utilisateur set is_admin=true where id_user = 0;	
+	
+commit;

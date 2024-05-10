@@ -1,0 +1,15 @@
+begin transaction;
+
+	-- inscription des utilisateurs autorisés à voter
+	insert into participation (id_vote, id_user, cle) values
+		(1, 2, 'du*tr4'),
+		(1, 3, 'dty-gR'),
+		(1, 4, 'Kjuht/');
+
+	select titre, login 
+		from participation p 
+		inner join utilisateur u on u.id_user = p.id_user 
+		inner join vote on vote.id_vote = p.id_vote;
+
+		
+commit;
